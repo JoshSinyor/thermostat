@@ -6,19 +6,23 @@ class Thermostat{
     this.MINIMUM_TEMPERATURE = 10;
     this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE = 25;
     this.MAXIMUM_TEMPERATURE = 32;
+    this.MAX_TEMPERATURE = false
+    this.MIN_TEMPERATURE = false
   };
 
   _up() {
+    if (this.MIN_TEMPERATURE = true) {this.MIN_TEMPERATURE = false};
     if (this.powerSavingMode === true && this.temperature === this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE)
-      {throw new Error ('maximum temperature in power saving mode is 25˚C')}
+      {this.MAX_TEMPERATURE = true; return;}
     else if (this.powerSavingMode === false && this.temperature === this.MAXIMUM_TEMPERATURE)
-      {throw new Error ('maximum temperature is 32˚C')};
+      {this.MAX_TEMPERATURE = true; return;};
     this.temperature ++;
   };
 
   _down() {
+    if (this.MAX_TEMPERATURE = true) {this.MAX_TEMPERATURE = false};
     if (this.temperature === this.MINIMUM_TEMPERATURE)
-      {throw new Error ('minimum temperature is 10˚C')}
+      {this.MIN_TEMPERATURE = true; return;}
     else {this.temperature --;};
   };
 

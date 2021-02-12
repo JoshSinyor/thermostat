@@ -5,11 +5,21 @@ $(document).ready(function() {
   $('#temperature-up').on('click', function() {
     thermostat._up();
     $('#temperature-display').text(thermostat.temperature);
+    if (thermostat.max_temperature === true) {
+      $('#celsius-max-display').css("color","black");
+    } else {
+      $('#celsius-max-display').css("color","#808A87");
+    };
   });
 
   $('#temperature-down').on('click', function() {
     thermostat._down();
     $('#temperature-display').text(thermostat.temperature);
+    if (thermostat.min_temperature === true) {
+      $('#celsius-min-display').css("color","black");
+    } else {
+      $('#celsius-min-display').css("color","#808A87");
+    };
   });
 
   $('#temperature-reset').on('click', function() {
@@ -23,6 +33,6 @@ $(document).ready(function() {
       $('#powersavingmode-display').css("color","black");
     } else {
       $('#powersavingmode-display').css("color","#808A87");
-    }
+    };
   });
 });
