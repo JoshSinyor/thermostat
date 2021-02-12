@@ -20,113 +20,111 @@ body {
   max-width: 600px;
   height: 600px;
   background-color: #d6d5cf;
+  text-transform: uppercase;
 }
 
-.screen {
-  border: 5px solid black;
-  border-radius: 20px;
-  margin: 25px;
-  padding: 10px;
-  height: 400px;
-  background-color: #8c9b96;
-  font-family: 'digital-clock-font';
-  color: black;
-}
-
-/* Date & Time Display */
-
-.box-clock {
-  display: table;
-  height: 55px;
-  width: 510px;
-  font-size: 30pt;
-}
-
-  .box-time {
-    display: table-cell;
-    width: 170px;
+  .screen {
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 25px;
+    padding: 10px;
+    height: 400px;
+    background-color: #8c9b96;
+    font-family: 'digital-clock-font';
+    color: black;
   }
 
-  .box-date {
-    display: table-cell;
-    width: 340px;
-  }
+    /* Date & Time Display */
 
-    .box-date-time {
-      position: absolute;
-      padding-top: 5px;
-      text-align: right;
+    .box-clock {
+      display: table;
+      height: 55px;
+      font-size: 30pt;
     }
 
-    .box-date-time-back {
-      padding-top: 5px;
+      .box-time {
+        display: table-cell;
+        width: 170px;
+      }
+
+      .box-date {
+        display: table-cell;
+        width: 340px;
+      }
+
+      .box-date-time {
+        width: inherit;
+        position: absolute;
+        padding-top: 5px;
+        text-align: right;
+      }
+
+      .box-date-time-back {
+        padding-top: 5px;
+        text-align: right;
+        color: #808A87;
+      }
+
+    /* Temperature Display */
+
+    .box-temperature {
+      position: absolute;
+      height: 315px;
+      width: 255px;
+      padding: 0px;
+      font-size: 150pt;
       text-align: right;
+      padding-top: 40px;
+    }
+
+    .box-temperature-back {
+      float: left;
+      height: 315px;
+      width: 255px;
+      padding: 0px;
+      font-size: 150pt;
+      text-align: right;
+      padding-top: 40px;
       color: #808A87;
     }
 
-/* Temperature Display */
+    .box-celsius {
+      float: left;
+      height: 315px;
+      width: 85px;
+      padding-top: 70px;
+      font-size: 250%;
+    }
 
-.box-temperature {
-  position: absolute;
-  height: 315px;
-  width: 255px;
-  padding: 0px;
-  font-size: 150pt;
-  text-align: right;
-  padding-top: 40px;
-}
+    /* Power Save Mode & Energy Usage Display */
 
-.box-temperature-back {
-  float: left;
-  height: 315px;
-  width: 255px;
-  padding: 0px;
-  font-size: 150pt;
-  text-align: right;
-  padding-top: 40px;
-  color: #808A87;
-}
+    .box-vertical-stack {
+      float: right;
+      width: 170px;
+      height: 315px;
+      border-spacing: 0px;
+    }
 
-.box-celsius {
-  float: left;
-  height: 315px;
-  width: 85px;
-  padding-top: 70px;
-  font-size: 250%;
-  color: #808A87;
-}
+      tr {
+        font-size: 30pt;
+      }
 
-/* Power Save Mode & Energy Usage Display */
+    /* Buttons */
 
-.box-vertical-stack {
-  float: right;
-  width: 170px;
-  height: 315px;
-}
+    .controls {
+      display: inline-grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      height: 100px;
+      margin: 25px;
+      margin-top: 0px;
+    }
 
-.box-vertical {
-  height: 50%;
-  padding-top: 25pt;
-  text-transform: uppercase;
-}
-
-/* Buttons */
-
-.controls {
-  display: inline-grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  height: 100px;
-  margin: 25px;
-  margin-top: 0px;
-}
-
-.button {
-  border: 3px solid black;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  margin-left: 7px;
-  margin-right: 7px;
-  background-color: #d7d7d7;
-  text-transform: uppercase;
-}
+      .button {
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        margin-left: 7px;
+        margin-right: 7px;
+        background-color: #d7d7d7;
+      }

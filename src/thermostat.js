@@ -7,6 +7,7 @@ class Thermostat{
     this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE = 25;
     this.MAXIMUM_TEMPERATURE = 32;
     this.minOrMaxTemperature = false
+    this.currentEnergyUsage = "medium"
   };
 
   _up() {
@@ -48,15 +49,16 @@ class Thermostat{
       {this.minOrMaxTemperature = "max"}
     else
       {this.minOrMaxTemperature = false};
+    this._currentEnergyUsage();
   };
 
   _currentEnergyUsage() {
-    if (this.temperature < 18) {
-      return "low"}
-    else if (this.temperature <= 25) {
-      return "medium"}
-    else {
-      return "high"};
+    if (this.temperature < 18)
+      {this.currentEnergyUsage = "low"}
+    else if (this.temperature <= 25)
+      {this.currentEnergyUsage = "medium"}
+    else
+      {this.currentEnergyUsage = "high"};
   };
 
 }

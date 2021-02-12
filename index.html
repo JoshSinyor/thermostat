@@ -8,18 +8,20 @@
 
   <body>
     <div class="unit">
-      <section>
         <div class="screen">
 
           <div class="box-clock">
+
             <div class="box-time">
               <div class="box-date-time" id="clock-display"></div>
               <div class="box-date-time-back">88:88:88</div>
             </div>
+
             <div class="box-date">
-              <div class="box-date-time" id="date-display" style="width: 340px;"></div>
+              <div class="box-date-time" id="date-display"></div>
               <div class="box-date-time-back">88/88/8888</div>
             </div>
+
           </div>
 
           <div class="box-temperature" id="temperature-display"></div>
@@ -27,20 +29,23 @@
 
           <div class="box-celsius">
             <div style="color: black;">.0˚C</div>
-            <div id="celsius-max-display">MAX</div>
-            <div id="celsius-min-display">MIN</div>
+            <div id="celsius-max-display">Max</div>
+            <div id="celsius-min-display">Min</div>
           </div>
 
-          <div class="box-vertical-stack">
-            <div class="box-vertical" id="powersavingmode-display">
-              <div style="font-size: 250%;">Power Save</div>
-            </div>
-            <div class="box-vertical" id="currentenergyusage-display">
-              <div style="font-size: 125%;">Energy Usage</div>
-              <div style="padding-top: 25px; font-size: 250%;">Medium</div>
-            </div>
-          </div>
-
+          <table class="box-vertical-stack">
+            <tr>
+              <td id="powersavingmode-display" style="height: 115px">Power Save</td>
+            </tr>
+            <tr>
+              <td id="currentenergyusage-display" style="height: 200px">
+                <div style="font-size: 15pt; padding-bottom: 10px">Energy Usage</div>
+                <div id="currentenergyusage-high-display">High</div>
+                <div id="currentenergyusage-medium-display">Medium</div>
+                <div id="currentenergyusage-low-display">Low</div>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="controls">
@@ -49,8 +54,6 @@
           <button class="button" id="temperature-reset" style="font-size: 15pt;">Reset</button>
           <button class="button" id="powersavingmode" style="font-size: 15pt;">Power Save Mode</button>
         </div>
-
-      </section>
     </div>
 
     <script src="jquery-3.5.1.js"></script>
