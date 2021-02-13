@@ -35,41 +35,59 @@ body {
   height: 400px;
   background-color: #8c9b96;
   font-family: 'digital-clock-font';
-  font-size: 30px;
+  font-size: 30pt;
   color: black;
 }
 
   .grid-container {
     display: grid;
-    width: 510px;
-    height: 370px;
-    grid-gap: 0px;
+    grid-template-rows: 55px 55px 70px 40px 50px 50px 50px;
     grid-template-columns: 170px 85px 85px 170px;
-    grid-template-rows: 55px 55px 60px 40px 50px 50px 60px;
+    grid-gap: 0px;
+    align-items: center;
   }
 
     .grid-item-2 {
-      grid-column-start: 2;
-      grid-column-end: 5;
+      grid-area: 1 / 2 / span 1 / span 3;
+      text-align: right;
+    }
+
+    .grid-item-3 {
+      text-align: right;
+      font-size: 15pt;
+    }
+
+    .grid-item-4 {
+      text-align: right;
+    }
+
+    .grid-item-5 {
+      text-align: left;
     }
 
     .grid-item-6 {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 4;
+      grid-area: 2 / 4 / span 2 / span 1;
     }
 
     .grid-item-7 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 8;
+      grid-area: 3 / 1 / span 5 / span 2;
+      text-align: right;
+      font-size: 150pt;
+    }
+
+    .grid-item-8 {
+      align-self: end;
+      text-align: left;
+    }
+
+    .grid-item-10 {
+      font-size: 15pt;
+      align-self: end;
     }
 
     .grid-item-11 {
-      grid-row-start: 5;
-      grid-row-end: 8;
+      grid-area: 5 / auto / span 3 / auto ;
+      align-self: start;
     }
 
 /* Buttons */
