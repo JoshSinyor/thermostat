@@ -9,43 +9,37 @@
   <body>
     <div class="unit">
         <div class="screen">
+          <div class="grid-container">
 
-          <div class="box-clock">
-
-            <div class="box-time">
-              <div class="box-date-time" id="clock-display"></div>
-              <div class="box-date-time-back">88:88:88</div>
+            <div class="grid-item-1">
+              <div class="grid-item-1-1" id="clock-display"></div>
+              <div class="grid-item-1-2" id="date-display"></div>
             </div>
 
-            <div class="box-date">
-              <div class="box-date-time" id="date-display"></div>
-              <div class="box-date-time-back">88/88/8888</div>
+            <div class="grid-item-2">
+              <div class="grid-item-2-1">Outside</div>
+              <div class="grid-item-2-2" id="local-temperature-display">20</div>
+              <div class="grid-item-2-3">.0˚C</div>
             </div>
 
+            <div class="grid-item-3" id="powersavingmode-display">Power Save</div>
+
+            <div class="grid-item-4">
+              <div class="grid-item-4-1" id="temperature-display"></div>
+              <div class="grid-item-4-2">
+                <div class="grid-item-4-3">.0˚C</div>
+                <div class="grid-item-4-4" id="celsius-max-display">Max</div>
+                <div class="grid-item-4-5" id="celsius-min-display">Min</div>
+              </div>
+            </div>
+
+            <div class="grid-item-5">
+              <div class="grid-item-5-1">Energy Usage</div>
+              <div class="grid-item-5-2" id="currentenergyusage-high-display">High</div>
+              <div class="grid-item-5-3" id="currentenergyusage-medium-display">Medium</div>
+              <div class="grid-item-5-4" id="currentenergyusage-low-display">Low</div>
+            </div>
           </div>
-
-          <div class="box-temperature" id="temperature-display"></div>
-          <div class="box-temperature-back">88</div>
-
-          <div class="box-celsius">
-            <div style="color: black;">.0˚C</div>
-            <div id="celsius-max-display">Max</div>
-            <div id="celsius-min-display">Min</div>
-          </div>
-
-          <table class="box-vertical-stack">
-            <tr>
-              <td id="powersavingmode-display" style="height: 115px">Power Save</td>
-            </tr>
-            <tr>
-              <td id="currentenergyusage-display" style="height: 200px">
-                <div style="font-size: 15pt; padding-bottom: 10px">Energy Usage</div>
-                <div id="currentenergyusage-high-display">High</div>
-                <div id="currentenergyusage-medium-display">Medium</div>
-                <div id="currentenergyusage-low-display">Low</div>
-              </td>
-            </tr>
-          </table>
         </div>
 
         <div class="controls">
