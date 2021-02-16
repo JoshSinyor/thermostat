@@ -41,7 +41,7 @@ body {
 
   .grid-container {
     display: grid;
-    grid-template: 55px 55px 55px 205px / 340px 170px;
+    grid-template: 55px 55px 70px 190px / 340px 170px;
     grid-gap: 0px;
     align-items: center;
   }
