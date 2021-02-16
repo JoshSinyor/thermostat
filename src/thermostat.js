@@ -31,8 +31,8 @@ class Thermostat{
   _changePowerSavingMode() {
     this.powerSavingMode = !this.powerSavingMode;
     if (this.powerSavingMode === true && this.temperature > this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE)
-      {this.temperature = this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE;
-       this._minOrMaxTemperature()};
+      {this.temperature = this.MAXIMUM_TEMPERATURE_POWER_SAVING_MODE};
+    this._minOrMaxTemperature();
   };
 
   _reset() {
