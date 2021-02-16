@@ -13,40 +13,44 @@
 
             <div class="grid-item-1">
               <div class="grid-item-1-1" id="clock-display"></div>
+              <div class="grid-item-1-1 back">88:88:88</div>
               <div class="grid-item-1-2" id="date-display"></div>
+              <div class="grid-item-1-2 back">88/88/8888</div>
             </div>
 
             <div class="grid-item-2">
               <div class="grid-item-2-1">Outside</div>
               <div class="grid-item-2-2" id="local-temperature-display">20</div>
+              <div class="grid-item-2-2 back">88</div>
               <div class="grid-item-2-3">.0˚C</div>
             </div>
 
-            <div class="grid-item-3" id="powersavingmode-display">Power Save</div>
+            <div class="grid-item-3 refresh" id="powersavingmode">Power Save</div>
 
             <div class="grid-item-4">
               <div class="grid-item-4-1" id="temperature-display"></div>
+              <div class="grid-item-4-1 back">88</div>
               <div class="grid-item-4-2">
                 <div class="grid-item-4-3">.0˚C</div>
-                <div class="grid-item-4-4" id="celsius-max-display">Max</div>
-                <div class="grid-item-4-5" id="celsius-min-display">Min</div>
+                <div class="grid-item-4-4 refresh" id="celsius-max">Max</div>
+                <div class="grid-item-4-5 refresh" id="celsius-min">Min</div>
               </div>
             </div>
 
             <div class="grid-item-5">
               <div class="grid-item-5-1">Energy Usage</div>
-              <div class="grid-item-5-2" id="currentenergyusage-high-display">High</div>
-              <div class="grid-item-5-3" id="currentenergyusage-medium-display">Medium</div>
-              <div class="grid-item-5-4" id="currentenergyusage-low-display">Low</div>
+              <div class="grid-item-5-2 refresh" id="currentenergyusage-high">High</div>
+              <div class="grid-item-5-3 refresh" id="currentenergyusage-medium">Medium</div>
+              <div class="grid-item-5-4 refresh" id="currentenergyusage-low">Low</div>
             </div>
           </div>
         </div>
 
         <div class="controls">
-          <button class="button" id="temperature-up" style="font-size: 60pt;">+</button>
-          <button class="button" id="temperature-down" style="font-size: 60pt;">−</button>
-          <button class="button" id="temperature-reset" style="font-size: 15pt;">Reset</button>
-          <button class="button" id="powersavingmode" style="font-size: 15pt;">Power Save Mode</button>
+          <button class="button" id="button-up" style="font-size: 60pt;">+</button>
+          <button class="button" id="button-down" style="font-size: 60pt;">−</button>
+          <button class="button" id="button-reset" style="font-size: 15pt;">Reset</button>
+          <button class="button" id="button-powersavingmode" style="font-size: 15pt;">Power Save Mode</button>
         </div>
     </div>
 
