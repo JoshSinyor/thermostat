@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 body {
@@ -22,8 +23,7 @@ body {
   max-width: 600px;
   height: 600px;
   background-color: #d6d5cf;
-  box-shadow: 1px 15px 15px 5px;
-  text-transform: uppercase;
+  box-shadow: 0px 15px 10px 2px;
 }
 
 /* Display */
@@ -38,6 +38,7 @@ body {
   font-family: 'digital-clock-font';
   font-size: 30pt;
   color: black;
+  box-shadow: inset 0px 0px 4px 3px;
 }
 
   .grid-container {
@@ -70,7 +71,7 @@ body {
     }
 
       .grid-item-2-1 {
-        font-size: 15px;
+        font-size: 20px;
       }
 
       .grid-item-2-2 {
@@ -110,7 +111,7 @@ body {
     }
 
       .grid-item-5-1 {
-        font-size: 15px;
+        font-size: 20px;
         padding-bottom: 5px;
       }
 
@@ -140,13 +141,13 @@ body {
     margin-left: 7px;
     margin-right: 7px;
     background-color: #d7d7d7;
-    box-shadow: 1px 5px 5px 0px;
+    box-shadow: 0px 5px 5px 0px;
   }
 
-  .button:focus {
-    outline: 0;
-  }
+    .button:focus {
+      outline: 0;
+    }
 
-  .button:active{
-    box-shadow: 0px 1px 1px 0px;
-  }
+    .button:active{
+      box-shadow: 0px 1px 1px 0px;
+    }
